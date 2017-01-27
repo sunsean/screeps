@@ -23,7 +23,7 @@ var actions = [];
 actions[ 0] = frame => _.each(Game.creeps, creep => creep.suicide());
 actions[ 1] = frame => _.find(Game.spawns).createCreep([TOUGH,TOUGH,TOUGH,TOUGH,TOUGH,MOVE], "mover");
 actions[20] = move;
-actions[21] = move; // should be a waste, but does it cost CPU?
+actions[21] = move; // should be a waste, but does it cost CPU? -- answer is "no" it doesn't cost cpu
 actions[22] = move; // should be a waste, but does it cost CPU?
 actions[25] = move;
 actions[30] = move;
